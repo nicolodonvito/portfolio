@@ -2,16 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700&display=swap');
 
 :root {
+    /* Main */
     --maincolor: #6952f5;
     --maincolor-desaturate: #826fff;
-    --scroll-color: #121212;
+    --scroll-color: #161616ee;
     --bg-scroll-color: #4d4d4d;
     --nav-bg-color: #303030ee;
+    --nav-anchor-color: #414141ee;
     --font-color: #e0e0e0;
     --icon-color: #bbbbbb;
-    --nav-anchor-color: #414141ee;
-    --bg-projcard: #ababab;
-    --bg-color: #252525ee;
+    --bg-color: #252525;
+
+    /* Introduction */
+
+    /* About */
+    --about-h1-color: #e0e0e0;
+    --about-h2-color: #cacaca;
+    --about-h3-color: #8f8f8f;
+    /* Projects */
+
+    /* Footer */
+    --footer-bg-color: #161616;
+    --footer-h1-color: #808080;
 }
 
 * {
@@ -28,7 +40,7 @@
 
 html,
 body {
-    background-color: var(--bg-color);
+    background-color: var(--footer-bg-color);
     overflow-x: hidden;
 }
 
@@ -137,7 +149,7 @@ body {
 
 /* debug */
 section {
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 100px;
 }
 
@@ -148,6 +160,7 @@ section {
 
 /* Introduction section */
 .introduction {
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -234,21 +247,98 @@ section {
     transition: 0.2s;
 }
 
-/* Education section */
+/* About section */
+.about {
+    /* background-color: var(--bg-color); */
+    color: var(--font-color);
+    margin: 0 10vw;
+}
+
+.aboutme-desc p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.am-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.spacer {
+    border: 1px solid var(--icon-color);
+    margin: 5vh auto;
+    /* width: 50%; */
+}
+
+.edu {
+    margin: 10% 0;
+    padding: 15px 0px;
+}
+
+.am-education>h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.edu h1,
+.works h1 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--about-h1-color);
+}
+
+.edu h2,
+.works h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--about-h2-color);
+}
+
+.edu h3,
+.works h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: var(--about-h3-color);
+}
+
+.edu p,
+.works p {
+    color: var(--maincolor-desaturate);
+}
+
+.am-work .works {
+    margin: 10% 0;
+    padding: 15px 0px;
+    text-align: end;
+}
+
+.am-work>h1 {
+    font-size: 2rem;
+    text-align: center;
+}
 
 /* Project section */
+.projects {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-style: solid;
+    border-width: 20px 20px;
+    border-radius: 100px 100px;
+    border-color: var(--bg-color);
+    margin: 5vh 5vw;
+    padding-bottom: 100px;
+}
+
 .projects-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1%;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
 }
 
 .projcard {
@@ -322,4 +412,40 @@ section {
 
 .level {
     background-color: rgba(183, 119, 0, 0.85);
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    padding: 50px;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.info-box h1 {
+    font-size: 1.2rem;
+    color: var(--footer-h1-color);
+}
+
+.info-box p {
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    color: var(--font-color);
+}
+
+.info-box i,
+a {
+    color: var(--footer-h1-color);
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--font-color);
+    font-size: 0.5rem;
+    padding-top: 100px;
 }

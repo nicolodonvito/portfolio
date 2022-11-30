@@ -15,7 +15,7 @@ if (currentTime > 4 && currentTime <= 12) {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Junior Game designer 🎮", "Tech Enthusiast 🤖", "Web Developer 💻"];
+const textArray = ["Junior Game designer 🎮", "Tech Enthusiast 🤖", "Web Designer 💻"];
 const typingDelay = 20;
 const erasingDelay = 30;
 const newTextDelay = 2000; // Delay between current and next text
