@@ -40,17 +40,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    scroll-behavior: smooth;
 
     scrollbar-width: auto;
     scrollbar-color: var(--bg-scroll-color) var(--scroll-color);
 }
 
-html,
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--footer-bg-color);
     overflow-x: hidden;
-    scroll-behavior: smooth;
+
 }
 
 .title {
@@ -566,7 +568,7 @@ a {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) and (max-width: 1000px){
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
     .introduction {
         padding: 100px 2.5% 50px 2.5%;
         background-color: var(--bg-color);
