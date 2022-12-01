@@ -50,6 +50,7 @@ html,
 body {
     background-color: var(--footer-bg-color);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .title {
