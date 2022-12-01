@@ -47,12 +47,12 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--footer-bg-color);
     overflow-x: hidden;
-
 }
 
 .title {
