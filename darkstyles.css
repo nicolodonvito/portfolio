@@ -32,6 +32,7 @@
     --level-card-color: rgba(183, 119, 0, 0.85);
     --coding-card-color: rgba(0, 183, 82, 0.85);
     --nongaming-card-color: rgba(24, 27, 27, 0.85);
+    --wip: rgb(65, 65, 65);
 }
 
 * {
@@ -100,6 +101,7 @@ body {
     top: 10px;
     background-color: var(--nav-bg-color);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     height: 70px;
     padding-left: 10%;
     padding-right: 10%;
@@ -426,6 +428,22 @@ section {
     background-color: var(--level-card-color);
 }
 
+.wip {
+    outline: 2px dashed var(--wip);
+    box-shadow: 0px -200px 400px 10px rgba(0, 0, 0, 0.9) inset;
+    -webkit-box-shadow: 0px -200px 400px 10px rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0px -200px 400px 10px rgba(0, 0, 0, 0.9) inset;
+    cursor: default;
+}
+.wip:hover{
+    outline: 2px dashed var(--wip);
+    outline-offset: 0px;
+    box-shadow: 0px -200px 400px 10px rgba(0, 0, 0, 0.9) inset;
+    -webkit-box-shadow: 0px -200px 400px 10px rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0px -200px 400px 10px rgba(0, 0, 0, 0.9) inset;
+    cursor: default;
+}
+
 /* Footer */
 footer {
     background-color: var(--footer-bg-color);
@@ -477,6 +495,7 @@ a {
         top: 10px;
         background-color: var(--nav-bg-color);
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         height: auto;
         margin: 0 0;
         padding: 10px 10px 10px 10px;
@@ -487,6 +506,12 @@ a {
         gap: 0;
         align-items: center;
         justify-content: space-around;
+    }
+
+    .anchor {
+        padding: 5px 5px;
+        margin: 10px 5px 0;
+        background-color: unset;
     }
 
     .active-link {
@@ -524,7 +549,7 @@ a {
 
     .typed-text,
     .cursor {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .buttons-CTA {
@@ -567,8 +592,134 @@ a {
     }
 }
 
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+    body {
+        margin: 10px 2.5% 10px 2.5%;
+    }
+
+    .navigation {
+        position: fixed;
+        flex-direction: row;
+        width: 95%;
+        z-index: 100;
+        border-radius: 10px;
+        top: 10px;
+        background-color: var(--nav-bg-color);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        height: auto;
+        margin: 0 0;
+        padding: 0px 10px 10px 10px;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .nav-sections {
+        gap: 0;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .anchor {
+        padding: 5px 5px;
+        margin: 10px 5px 0;
+        background-color: unset;
+    }
+
+    .active-link {
+        border-radius: 10px;
+        background-color: var(--nav-anchor-color);
+        transition: 0.2s ease-out;
+        padding: 5px 20px;
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .photo img {
+        margin: 0 0;
+        height: 170px;
+        width: 170px;
+        display: inline;
+    }
+
+    .introduction {
+        flex-direction: column-reverse;
+        text-align: center;
+        border-radius: 10px;
+        padding: 65px 2.5% 0 2.5%;
+        height: auto;
+    }
+
+    .introduction h1 {
+        font-size: 1.8rem;
+    }
+
+    .introduction p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .typed-text,
+    .cursor {
+        font-size: 1.3rem;
+    }
+
+    .buttons-CTA {
+        margin-top: 15px;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .am-container {
+        flex-direction: column;
+    }
+
+    .am-work {
+        padding-top: 50px;
+    }
+
+    .am-work>h1 {
+        text-align: left;
+    }
+
+    .am-work .works {
+        margin: 10px 0;
+        padding: 15px 0px;
+        text-align: left;
+    }
+
+    .about {
+        padding-top: 65px;
+    }
+
+    .title p {
+        font-size: 1rem;
+    }
+
+    .projects {
+        border-radius: 10px;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .projcard {
+        width: 270px;
+        height: 152px;
+    }
+
+    .info-box {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
+@media only screen and (min-width: 702px) and (max-width: 1000px) {
     .introduction {
         padding: 100px 2.5% 50px 2.5%;
         background-color: var(--bg-color);
