@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="images/Logo Alquati.png">
+    <script src="https://kit.fontawesome.com/9978713fa3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <title>Impresa di pulizie A2A Alquati</title>
+</head>
+
+<!-- Navigation bar -->
+<header>
+    <nav class="navigation">
+        <div class="nav-icon">
+            <a href="\remake\index.html">
+                <img src="images/Logo Alquati Scritta orizzontale.png" class="full-icon">
+                <img src="images/Logo Alquati.png" class="mobile-icon">
+            </a>
+            <a href="javascript:void(0);" class="hbmenu" onclick="hbmenu()">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </a>
+        </div>
+        <div class="nav-group">
+            <div class="nav-sections">
+                <a href="#about" class="before anchor" id="btn-about">
+                    <h1>Chi siamo</h1>
+                </a>
+                <a href="#ambienti" class="anchor" id="btn-nav-lavoro">
+                    <h1>Ambienti</h1>
+                </a>
+                <a href="#preventivo" class="after anchor" id="btn-nav-preventivo">
+                    <h1>Preventivo gratuito</h1>
+                </a>
+            </div>
+
+            <div class="tel">
+                <a href="tel:+393396446895">
+                    <div>
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                    </div>
+                    <div>
+                        <h1>Contattaci</h1>
+                        <p>+39 339 644 6895</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <!-- Main section -->
+    <section class="main">
+        <div class="titlegroup">
+            <h1>Impresa di pulizie A2A Alquati</h1>
+            <h2>Se cerchi qualità e competenza, affida ad A2A Alquati la pulizia dei tuoi ambienti</h2>
+            <div class="CallToAction">
+                <a id="cta-ppdt">
+                    <p>Scopri di più <i class="fa-solid fa-arrow-right"></i></p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+    <section class="about" id="about">
+        <div class="about-photo">
+            <img src="images/pic3.png">
+        </div>
+        <div class="about-desc">
+            <h1>Chi siamo</h1>
+            <p>Siamo un team a conduzione familiare che opera sul territorio lombardo, in particolare Milano e
+                provincia.<br>
+                La nostra esperienza pluriennale ci ha concesso di avere le competenze adatte a pulire e igienizzare
+                ogni tipo di luogo.</p>
+            <p>Potete trovare i nostri lavori e le ultime novità nei canali social</p>
+            <div class="social">
+                <a href="https://www.facebook.com/puliziea2a">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/puliziea2a">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- PPDT section -->
+    <section class="ppdt" id="ppdt">
+        <div class="title-ppdt">
+            <h1>Pulizie dalla A alla Z.</h1>
+            <h2>Dal privato alle aziende, il nostro team renderà scintillante anche l'angolo più sporco</h2>
+        </div>
+        <div class="edifici">
+            <div class="edicard" style="background-image: url(images/appartamenti.jpg);" id="btn-ppdt-casa"
+                href="#privato">
+                <h1>Appartamenti</h1>
+            </div>
+            <div class="edicard" style="background-image: url(images/aziende.jpg);" id="btn-ppdt-lavoro" href="#lavoro">
+                <h1>Aziende</h1>
+            </div>
+            <div class="edicard" style="background-image: url(images/uffici.jpg);" id="btn-ppdt-lavoro2" href="#lavoro">
+                <h1>Uffici</h1>
+            </div>
+            <div class="edicard" style="background-image: url(images/ville.jpg);" id="btn-ppdt-casa2" href="#privato">
+                <h1>Ville</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="ambienti" id="ambienti">
+        <div class="ambs">
+            <div class="privato" id="privato">
+                <div class="privato-titolo">
+                    <h1>Casa</h1>
+                    <h2>Offriamo servizi di pulizia per ogni ambiente abitabile tra cui appartamenti, condomini e ville.
+                        Inoltre i nostri servizi comprendono anche lo sgombero e la pulizia di cantine</h2>
+                </div>
+                <div class="privato-desc">
+                    <div class="elementi">
+                        <img src="images/spray.svg">
+                        <p>Utilizzo di prodotti adatti ad ogni superficie</p>
+                    </div>
+                    <div class="elementi">
+                        <img src="images/broom.svg">
+                        <p>Rimozione della polvere da mensole e mobili</p>
+                    </div>
+                    <div class="elementi">
+                        <img src="images/efficiency.svg">
+                        <p>Pulizia nel minor tempo possibile</p>
+                    </div>
+                    <div class="elementi">
+                        <img src="images/vacuum.svg">
+                        <p>Aspirazione profonda della polvere</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lavoro" id="lavoro">
+                <div class="lavoro-titolo">
+                    <h1>Lavoro</h1>
+                    <h2>Offriamo anche servizi destinati al settore
+                        lavorativo, infatti A2A Alquati è in grado di fornire un servizio di pulizia professionale per
+                        ogni tipo di azienda e ufficio.</h2>
+                </div>
+                <div class="lavoro-desc">
+                    <div class="elementi">
+                        <img src="images/bigsmall.svg">
+                        <p>Pulizia di piccoli e grandi spazi</p>
+                    </div>
+                    <div class="elementi">
+                        <img src="images/tool.svg">
+                        <p>Pulizia delle attrezzature da lavoro</p>
+                    </div>
+                    <div class="elementi">
+                        <img src="images/efficiency.svg">
+                        <p>Pulizia nel minor tempo possibile</p>
+                    </div>
+                    <div class="elementi">
+                        <img src="images/vacuum-cleaner.png">
+                        <p>Rimozione avanzata della polvere</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Preventivo section -->
+    <section class="preventivo" id="preventivo">
+        <div class="contattiamo">
+            <div class="contattiamo-title">
+                <h1>Richiedi qui il tuo preventivo gratuito</h1>
+                <h2>I campi contrassegnati con * sono obbligatori</h2>
+            </div>
+            <form class="form">
+                <div class="form-left">
+                    <div class="nome-form">
+                        <input type="text" id="fname" name="firstName" autocomplete="given-name" placeholder="Nome *"
+                            required>
+                        <input type="text" id="lname" name="lastName" autocomplete="family-name" placeholder="Cognome *"
+                            required>
+                    </div>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Indirizzo email *"
+                        required>
+                    <input type="tel" id="phone" name="phone" placeholder="Numero di telefono *" required>
+                    <select class="text">
+                        <option>Edifici residenziali</option>
+                        <option>Edifici commerciali</option>
+                    </select>
+                </div>
+                <div class="form-right">
+                    <textarea name="text" id="text" placeholder="Inserisci la tua richiesta *" cols="30" rows="5"
+                        class="text" required></textarea>
+                    <input type="submit" class="submit" value="Invia">
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="info-box" location.href="#main">
+            <div>
+                <img src="images/Logo Alquati.png" class="full-icon">
+                <img src="images/Logo Alquati Scritta orizzontale.png" class="mobile-icon footer-icon">
+            </div>
+            <div>
+                <h1>Impresa di Pulizie A2A Alquati</h1>
+                <h2>©2023 A2A Alquati Srls</h2>
+                <h3>P.IVA: 09175500967</h3>
+            </div>
+        </div>
+        <div class="contatti">
+            <div class="orari">
+                <div>
+                    <h1>Orari</h1>
+                </div>
+                <div>
+                    <h2>Lun - Sab: 08:00 - 18:00</h2>
+                    <h2>Dom: Chiuso</h2>
+                </div>
+                <br>
+                <div>
+                    <h1>Contatti</h1>
+                </div>
+                <div>
+                    <h2>Telefono: +39 339 644 6895</h2>
+                    <div class="footer_social">
+                        <a href="https://api.whatsapp.com/send?phone=393396446895">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/puliziea2a">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/puliziea2a">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Import JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
